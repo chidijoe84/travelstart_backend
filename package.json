@@ -1,0 +1,39 @@
+{
+  "name": "travelstart-backend",
+  "version": "1.0.0",
+  "description": "Node.js/Express + MySQL backend for the Travel Start Hotels booking frontend",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:import": "node scripts/importSql.js",
+    "db:check": "node scripts/checkDb.js",
+    "db:admin": "node scripts/createAdmin.js",
+    "test:smoke": "node scripts/smokeTest.js"
+  },
+  "keywords": [
+    "travel",
+    "hotel",
+    "booking",
+    "express",
+    "mysql"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.5.0",
+    "mysql2": "^3.10.1",
+    "nodemailer": "^10.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
